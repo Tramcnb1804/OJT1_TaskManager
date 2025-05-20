@@ -3,6 +3,8 @@ import { useState } from "react";
 import Home from "./pages/Home.jsx";
 import LoginPage from "./pages/LoginPage/LoginPage.jsx";
 import Task from "./pages/TaskManager.jsx"
+import UserManagement from './pages/UserManager.jsx'; // ví dụ
+
 import "./App.css";
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/task" element={<Task />} />
+<       Route path="/users" element={<UserManagement />} />
       </Routes>
     </Router>
   );
